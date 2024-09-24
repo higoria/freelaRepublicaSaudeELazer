@@ -1,0 +1,104 @@
+:root {
+  --verde: #7fffd4;
+  --preto: #111111;
+  --branco: #fff;
+  --rosa: #ff00cf;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+a,
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+*::-webkit-scrollbar {
+  height: 11px;
+  width: 11px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #ebebeb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #0ddcb2;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #62a34b;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #62a34b;
+}
+.pontofinal {
+  color: var(--rosa);
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #fc00ff 0%,
+    #00dbde 51%,
+    #fc00ff 100%
+  );
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.animation-sociais-media:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.animation-sociais-media:not(:hover) {
+  transform: scale(1);
+  transition: 0.3s;
+}

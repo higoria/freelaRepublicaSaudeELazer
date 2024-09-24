@@ -1,0 +1,75 @@
+.banner-section {
+  position: relative;
+  background: url("/src/imgs/bk-section01.svg") no-repeat center;
+  height: 750px;
+}
+
+.textos-principais-banner {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-inline: 40px;
+  color: var(--branco);
+}
+.textos-principais-banner h4 {
+  font-weight: normal;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.textos-principais-banner h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 80px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+.textos-principais-banner button {
+  font-weight: 700;
+}
+
+@media (max-width: 835px) and (min-width: 500px) {
+  .banner-section {
+    height: 450px;
+    background: url("/src/imgs/bk-section01.svg") no-repeat center;
+    background-size: cover;
+  }
+  .textos-principais-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .textos-principais-banner h4 {
+    font-weight: normal;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+  }
+  .textos-principais-banner h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 58px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .banner-section {
+    height: 450px;
+  }
+  .textos-principais-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .textos-principais-banner h1 {
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 39px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+  }
+}

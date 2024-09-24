@@ -1,0 +1,135 @@
+.aulas-section {
+  margin-top: 100px;
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  color: var(--branco);
+}
+.aulas-section .aulas-h1 {
+  padding-top: 50px;
+  font-size: 3.2rem;
+}
+.aulas-section .aulas-h1::after {
+  margin-top: -12px;
+  content: "";
+  display: block;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    111deg,
+    rgba(0, 0, 0, 1) 29%,
+    rgba(255, 0, 207, 1) 87%
+  );
+  width: 190px;
+  height: 3px;
+}
+.tabela-de-aulas {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+}
+.aulas-infos-conteiner {
+  display: flex;
+  gap: 40px;
+}
+.aulas-geral {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dias-da-semana ul {
+  display: flex;
+  gap: 15px;
+}
+.dias-da-semana ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dias-da-semana ul li::after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  width: 1px;
+  height: 16px;
+  background-color: var(--preto);
+}
+
+.aula01,
+.aula02 {
+  width: 60%;
+  border-bottom: 1px solid var(--branco);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.aula03 {
+  width: 60%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.btn-agendar button {
+  padding: 10px 30px;
+  background-color: var(--preto);
+  color: var(--branco);
+  border-radius: 10px;
+}
+
+@media (max-width: 660px) {
+  .aulas-section {
+    height: 1070px;
+  }
+  .aulas-geral {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabela-de-aulas {
+    padding-top: 70px;
+    gap: 50px;
+  }
+  .aulas-infos-conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .aulas-section .aulas-h1 {
+    padding-top: 50px;
+    font-size: 2.5rem;
+  }
+  .aulas-geral h1 {
+    border-bottom: 1px solid var(--preto);
+    padding-bottom: 10px;
+  }
+  .dias-da-semana ul {
+    padding-top: 10px;
+  }
+  .aula01,
+  .aula02 {
+    border-bottom: none;
+  }
+  .infos {
+    gap: 10px;
+  }
+  .btn-agendar button {
+    width: 100%;
+  }
+}
+@media (max-width: 362px) {
+  .aulas-section .aulas-h1 {
+    padding-top: 40px;
+    font-size: 2.3rem;
+  }
+}
